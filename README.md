@@ -110,6 +110,10 @@ Built-in components that can be used in page sections:
 | `nav` | Navigation header (auto-included) |
 | `footer` | Footer (auto-included) |
 
+## Contributing
+
+Pull requests are welcome. This repo is synced from a private source — accepted contributions are applied there and synced back on the next push. Your PR history and attribution are preserved in the commit.
+
 ## License
 
 MIT
