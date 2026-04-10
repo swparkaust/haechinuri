@@ -492,10 +492,9 @@ main {
 }
 
 @media (max-width: 768px) {
-  .text-block-inner {
+  .text-block .text-block-inner {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .text-block-image {
