@@ -1,0 +1,88 @@
+{
+  "site": {
+    "title": "Alex Chen",
+    "description": "Full-Stack Developer"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu"
+  },
+  "index": {
+    "title": "Alex Chen — Developer",
+    "metaDescription": "Full-stack developer building tools for the modern web."
+  },
+  "hero": {
+    "title": "Alex Chen",
+    "subtitle": "Full-Stack Developer",
+    "description": "Building tools for the modern web."
+  },
+  "about": {
+    "title": "About",
+    "metaDescription": "About Alex Chen — Full-Stack Developer",
+    "bio": "I'm a full-stack developer who enjoys building practical tools and learning new technologies. I spend most of my time working with JavaScript and Ruby, and I'm always looking for interesting problems to solve.\n\nThis is an example site built with HaechiNuri. Replace this content with your own by editing the files in your site's content directory."
+  },
+  "projects": {
+    "featured": [
+      {
+        "title": "WeatherDash",
+        "tagline": "Real-time weather dashboard with interactive maps and forecast visualizations."
+      },
+      {
+        "title": "TaskFlow",
+        "tagline": "Team task management app with real-time updates and workflow automation."
+      }
+    ],
+    "more": [
+      {
+        "title": "Dotfiles",
+        "description": "Personal development environment configuration."
+      },
+      {
+        "title": "Pixel Art Editor",
+        "description": "Browser-based pixel art editor with layers and animation support."
+      }
+    ],
+    "moreTitle": "More Projects",
+    "viewProject": "View Project"
+  },
+  "projectPages": {
+    "weatherDash": {
+      "title": "WeatherDash",
+      "tagline": "Real-time weather dashboard with interactive maps and forecast visualizations.",
+      "description": "WeatherDash pulls data from the OpenWeather API to display current conditions, hourly forecasts, and interactive radar maps.",
+      "overview": "Built with React and Node.js, WeatherDash demonstrates API integration, data visualization, and responsive design.",
+      "linkLabel": "GitHub",
+      "sections": [
+        {
+          "type": "tags",
+          "title": "Tech Stack"
+        }
+      ]
+    },
+    "taskflow": {
+      "title": "TaskFlow",
+      "tagline": "Team task management app with real-time updates and workflow automation.",
+      "description": "TaskFlow is a collaborative task management application with real-time updates powered by ActionCable.",
+      "overview": "Built with Rails 8 and PostgreSQL, TaskFlow uses Redis for real-time pub/sub and background job processing.",
+      "linkLabel": "GitHub",
+      "sections": [
+        {
+          "type": "tags",
+          "title": "Tech Stack"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "emailLabel": "Email",
+    "githubLabel": "GitHub"
+  },
+  "ui": {
+    "github": "GitHub"
+  },
+  "footer": {
+    "copyright": "\u00a9 {year} Alex Chen"
+  }
+}

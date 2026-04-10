@@ -1,0 +1,155 @@
+{
+  "title": "Alex Chen",
+  "url": "https://example.com",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "defaultLanguage": "en",
+  "languageLabels": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "navigation": [
+    {
+      "slug": "index",
+      "labelKey": "nav.home"
+    },
+    {
+      "slug": "about",
+      "labelKey": "nav.about"
+    }
+  ],
+  "links": [
+    {
+      "icon": "email",
+      "url": "mailto:hello@example.com",
+      "label": "hello@example.com",
+      "labelKey": "contact.emailLabel"
+    },
+    {
+      "icon": "github",
+      "url": "https://github.com/example",
+      "label": "GitHub",
+      "labelKey": "contact.githubLabel"
+    }
+  ],
+  "projects": {
+    "featured": [
+      {
+        "id": "weather-dash",
+        "tags": [
+          "React",
+          "Node.js",
+          "OpenWeather API"
+        ],
+        "link": "https://github.com/example/weather-dash",
+        "linkIcon": "github",
+        "page": "weather-dash",
+        "gradient": "linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%)"
+      },
+      {
+        "id": "taskflow",
+        "tags": [
+          "Rails 8",
+          "PostgreSQL",
+          "Redis"
+        ],
+        "link": "https://github.com/example/taskflow",
+        "linkIcon": "github",
+        "page": "taskflow",
+        "gradient": "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)"
+      }
+    ],
+    "more": [
+      {
+        "id": "dotfiles",
+        "tags": [
+          "Shell",
+          "Lua"
+        ],
+        "link": "https://github.com/example/dotfiles"
+      },
+      {
+        "id": "pixel-art-editor",
+        "tags": [
+          "TypeScript",
+          "Canvas API"
+        ],
+        "link": "https://github.com/example/pixel-art-editor"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "titleKey": "index.title",
+      "descriptionKey": "index.metaDescription",
+      "template": "default",
+      "sections": [
+        {
+          "component": "hero",
+          "dataKey": "hero"
+        },
+        {
+          "component": "feature-banner",
+          "dataKey": "projects.featured",
+          "ctaLabelKey": "projects.viewProject",
+          "linkLabelKey": "ui.github"
+        },
+        {
+          "component": "card-grid",
+          "titleKey": "projects.moreTitle",
+          "dataKey": "projects.more",
+          "linkLabelKey": "ui.github"
+        },
+        {
+          "component": "contact-section",
+          "titleKey": "contact.title",
+          "dataKey": "links"
+        }
+      ]
+    },
+    {
+      "slug": "about",
+      "titleKey": "about.title",
+      "descriptionKey": "about.metaDescription",
+      "sections": [
+        {
+          "component": "text-block",
+          "titleKey": "about.title",
+          "contentKey": "about.bio"
+        },
+        {
+          "component": "contact-section",
+          "titleKey": "contact.title",
+          "dataKey": "links"
+        }
+      ]
+    },
+    {
+      "slug": "weather-dash",
+      "titleKey": "projectPages.weatherDash.title",
+      "descriptionKey": "projectPages.weatherDash.tagline",
+      "sections": [
+        {
+          "component": "detail-page",
+          "dataKey": "projectPages.weatherDash",
+          "configKey": "projects.featured.0"
+        }
+      ]
+    },
+    {
+      "slug": "taskflow",
+      "titleKey": "projectPages.taskflow.title",
+      "descriptionKey": "projectPages.taskflow.tagline",
+      "sections": [
+        {
+          "component": "detail-page",
+          "dataKey": "projectPages.taskflow",
+          "configKey": "projects.featured.1"
+        }
+      ]
+    }
+  ]
+}

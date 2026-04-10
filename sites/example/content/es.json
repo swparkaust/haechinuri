@@ -1,0 +1,88 @@
+{
+  "site": {
+    "title": "Alex Chen",
+    "description": "Desarrollador Full-Stack"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "menu": "Men\u00fa"
+  },
+  "index": {
+    "title": "Alex Chen — Desarrollador",
+    "metaDescription": "Desarrollador full-stack creando herramientas para la web moderna."
+  },
+  "hero": {
+    "title": "Alex Chen",
+    "subtitle": "Desarrollador Full-Stack",
+    "description": "Creando herramientas para la web moderna."
+  },
+  "about": {
+    "title": "Acerca de",
+    "metaDescription": "Acerca de Alex Chen — Desarrollador Full-Stack",
+    "bio": "Soy un desarrollador full-stack al que le gusta crear herramientas pr\u00e1cticas y aprender nuevas tecnolog\u00edas. Paso la mayor parte de mi tiempo trabajando con JavaScript y Ruby, y siempre estoy buscando problemas interesantes que resolver.\n\nEste es un sitio de ejemplo creado con HaechiNuri. Reemplaza este contenido con el tuyo editando los archivos en el directorio de contenido de tu sitio."
+  },
+  "projects": {
+    "featured": [
+      {
+        "title": "WeatherDash",
+        "tagline": "Panel de clima en tiempo real con mapas interactivos y visualizaciones de pron\u00f3stico."
+      },
+      {
+        "title": "TaskFlow",
+        "tagline": "Aplicaci\u00f3n de gesti\u00f3n de tareas en equipo con actualizaciones en tiempo real y automatizaci\u00f3n de flujos de trabajo."
+      }
+    ],
+    "more": [
+      {
+        "title": "Dotfiles",
+        "description": "Configuraci\u00f3n personal del entorno de desarrollo."
+      },
+      {
+        "title": "Pixel Art Editor",
+        "description": "Editor de pixel art en el navegador con capas y soporte de animaci\u00f3n."
+      }
+    ],
+    "moreTitle": "M\u00e1s Proyectos",
+    "viewProject": "Ver Proyecto"
+  },
+  "projectPages": {
+    "weatherDash": {
+      "title": "WeatherDash",
+      "tagline": "Panel de clima en tiempo real con mapas interactivos y visualizaciones de pron\u00f3stico.",
+      "description": "WeatherDash obtiene datos de la API de OpenWeather para mostrar condiciones actuales, pron\u00f3sticos por hora y mapas de radar interactivos.",
+      "overview": "Construido con React y Node.js, WeatherDash demuestra integraci\u00f3n de APIs, visualizaci\u00f3n de datos y dise\u00f1o responsivo.",
+      "linkLabel": "GitHub",
+      "sections": [
+        {
+          "type": "tags",
+          "title": "Stack Tecnol\u00f3gico"
+        }
+      ]
+    },
+    "taskflow": {
+      "title": "TaskFlow",
+      "tagline": "Aplicaci\u00f3n de gesti\u00f3n de tareas en equipo con actualizaciones en tiempo real y automatizaci\u00f3n de flujos de trabajo.",
+      "description": "TaskFlow es una aplicaci\u00f3n colaborativa de gesti\u00f3n de tareas con actualizaciones en tiempo real impulsadas por ActionCable.",
+      "overview": "Construido con Rails 8 y PostgreSQL, TaskFlow usa Redis para pub/sub en tiempo real y procesamiento de trabajos en segundo plano.",
+      "linkLabel": "GitHub",
+      "sections": [
+        {
+          "type": "tags",
+          "title": "Stack Tecnol\u00f3gico"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "emailLabel": "Correo",
+    "githubLabel": "GitHub"
+  },
+  "ui": {
+    "github": "GitHub"
+  },
+  "footer": {
+    "copyright": "\u00a9 {year} Alex Chen"
+  }
+}

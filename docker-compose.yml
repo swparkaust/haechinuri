@@ -1,0 +1,41 @@
+services:
+  site:
+    build:
+      context: .
+      args:
+        SITE_NAME: example
+    ports:
+      - "3000:3000"
+    environment:
+      - SITE_NAME=example
+      - PORT=3000
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-changeme}
+    volumes:
+      - site-content:/app/sites/example/content
+      - site-assets:/app/sites/example/assets
+      - ./sites/example/config.json:/app/sites/example/config.json
+    restart: unless-stopped
+
+  # To add another site, duplicate the block above with a different
+  # SITE_NAME and port:
+  #
+  # another:
+  #   build:
+  #     context: .
+  #     args:
+  #       SITE_NAME: another
+  #   ports:
+  #     - "3001:3000"
+  #   environment:
+  #     - SITE_NAME=another
+  #     - PORT=3000
+  #     - ADMIN_PASSWORD=${ADMIN_PASSWORD_2:-changeme}
+  #   volumes:
+  #     - another-content:/app/sites/another/content
+  #     - another-assets:/app/sites/another/assets
+  #     - ./sites/another/config.json:/app/sites/another/config.json
+  #   restart: unless-stopped
+
+volumes:
+  site-content:
+  site-assets:

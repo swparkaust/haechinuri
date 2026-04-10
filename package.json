@@ -1,0 +1,16 @@
+{
+  "name": "haechinuri",
+  "version": "1.0.0",
+  "description": "HaechiNuri static site framework",
+  "bin": {
+    "haechinuri": "./haechinuri/bin/cli.js"
+  },
+  "scripts": {
+    "build": "node haechinuri/bin/cli.js build",
+    "dev": "node haechinuri/bin/cli.js dev",
+    "serve": "node haechinuri/bin/cli.js serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
