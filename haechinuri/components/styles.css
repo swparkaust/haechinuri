@@ -308,6 +308,15 @@ main {
   max-width: 800px;
 }
 
+.section-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  margin: 0 auto var(--spacing-sm);
+  display: block;
+  object-fit: contain;
+}
+
 .banner-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;

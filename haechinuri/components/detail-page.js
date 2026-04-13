@@ -14,6 +14,7 @@ module.exports = {
     const tags = itemConfig.tags || [];
     const link = itemConfig.link || '';
     const gradient = itemConfig.gradient || section.gradient || 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%)';
+    const icon = itemConfig.icon || '';
 
     const tagBadges = tags.map(
       tag => `<span class="tech-badge">${tag}</span>`
@@ -45,8 +46,11 @@ module.exports = {
       </a>`;
     }
 
+    const iconHtml = icon ? `<img class="section-icon" src="${icon}" alt="${title}" width="80" height="80">` : '';
+
     return `<section class="detail-hero fade-in" style="background: ${gradient}">
       <div class="detail-hero-content">
+        ${iconHtml}
         <h1 class="detail-title">${title}</h1>
         <p class="detail-tagline">${tagline}</p>
       </div>

@@ -21,6 +21,7 @@ module.exports = {
       const link = itemConfig.link || '';
       const pageSlug = itemConfig.page || '';
       const gradient = itemConfig.gradient || DEFAULT_GRADIENTS[i % DEFAULT_GRADIENTS.length];
+      const icon = itemConfig.icon || '';
 
       const tagBadges = (Array.isArray(tags) ? tags : []).map(
         tag => `<span class="tech-badge">${tag}</span>`
@@ -38,8 +39,11 @@ module.exports = {
         linkHtml = linkLabel ? `<a href="${link}" class="banner-link" target="_blank" rel="noopener noreferrer">${linkLabel}</a>` : '';
       }
 
+      const iconHtml = icon ? `<img class="section-icon" src="${icon}" alt="${title}" width="80" height="80">` : '';
+
       return `<section class="feature-banner fade-in" style="background: ${gradient}">
       <div class="banner-content">
+        ${iconHtml}
         <h2 class="banner-title">${title}</h2>
         <p class="banner-tagline">${tagline}</p>
         <div class="banner-tags">
